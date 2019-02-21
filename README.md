@@ -46,62 +46,30 @@ You can now use these elements as variables.
 
 ```
 public void displayResults(View view) {
+	//TODO: Implement the functionality
     }
 ```
  
  <a name="Implement"></a>
 > ## Implementing Backend Functionality
 
-An API transaction workflow is as follows:
+The backend functionality code is as follows:
 
-1. A request is made for a task to be performed
-2. A program is run to complete that request
-3. The program sends back a response with the results
- 
- If the API request and response are sent over the internet, then the API is called a “Web Service API.”
+```
+public void displayResults(View view) {
+        String inputText = editText.getText().toString(); //Any text entered in the EditText element is stored in inputText
+        if (inputText.equals("")){
+            return; //If no text is entered break out of the function
+        }
+        textView.setText(inputText); //Set the TextView element to the input text 
+    }
+```
 
 <a name="Testing"></a>
 > ## Testing on Emulator
 
-SOAP is an acronym that stands for Simple Object Access Protocol. It is used to complete a web service using HTTP.
+Load up an emulator using the AVD manager and run the program:
 
-A web service using SOAP has a WSDL (Web Services Description Language). This is an XML file that describes the web service and what you can do with it. 
-
-In SOAP, the HTTP request is created as follows:
-
-1. Start Line: {POST} {WSDL URL} {HTTP version}
-   - Method is not used and POST works as a placeholder. 
-   - WSDL URL is the WSDL location.
-
-2. Header Line: Content-Type: text/xml
-   - SOAP only supports XML as the data format to be used in the body.
-
-3. Body
-   - The body constitutes an XML envelope formed using the specific WSDL.
-
-`Example of using a SOAP-based web service`
-
-Web service: HolidayService2 
-This web service provides the holidays for a specified country. It is described by this WSDL.
-
-- Method:  POST 
-- URL: http://www.holidaywebservice.com/HolidayService_v2/HolidayService2.asmx?WSDL 
-- Headers: content-type: test/XML
-- Body: 
-```
-<?xml version="1.0"?>
-<soap:Envelope
-xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
-xmlns:hws="http://www.holidaywebservice.com/HolidayService_v2/"> //WSDL will tell you this namespace.
-
-<soap:Body>
-  <hws: GetHolidaysAvailable>
-	<hws: countryCode>UnitedStates</hws: countryCode>
-  </hws: GetHolidaysAvailable>
-</soap:Body>
-
-</soap:Envelope>
-```
 
 
 
