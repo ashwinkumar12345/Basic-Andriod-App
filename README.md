@@ -17,6 +17,7 @@ You can build the UI using XML text:
 1. Open the *activity_main.xml* file
 2. The *TextView* element is setup by default 
 3. Copy the *EditText*, *Button*, and *TextView* elements from the source code into your file.
+4. Copy the string resources from the *strings* file.
 
 <a name="Connect"></a>
 > ## Connecting UI to Backend Code with Variables and Methods
