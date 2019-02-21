@@ -70,7 +70,7 @@ public void displayResults(View view) {
 
 Load up an emulator using the AVD manager and run the program:
 
-
+![app1](https://user-images.githubusercontent.com/4720428/53188456-3de33380-35ba-11e9-98c5-1f96424a2dbf.png)
 
 
 
