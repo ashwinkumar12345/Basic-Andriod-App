@@ -7,7 +7,7 @@ After you have a basic understanding of Andriod Studio and have it installed and
 **[Building UI in XML Files](#UI)**<br>
 **[Connecting UI to Backend Code with Variables and Methods](#Connect)**<br>
 **[Implementing Backend Functionality](#Implement)**<br>
-**[Testing on Emulator and Improving the UI](#Testing)**<br>
+**[Testing on Emulator](#Testing)**<br>
 
 <a name="UI"></a>
 > ## Building UI in XML Files
@@ -42,7 +42,7 @@ An API transaction workflow is as follows:
  If the API request and response are sent over the internet, then the API is called a “Web Service API.”
 
 <a name="Testing"></a>
-> ## Testing on Emulator and Improving the UI
+> ## Testing on Emulator
 
 SOAP is an acronym that stands for Simple Object Access Protocol. It is used to complete a web service using HTTP.
 
