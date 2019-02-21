@@ -22,13 +22,32 @@ You can build the UI using XML text:
 <a name="Connect"></a>
 > ## Connecting UI to Backend Code with Variables and Methods
 
-An API transaction workflow is as follows:
+You need to gain access to the *EditText* and *TextView* elements from the UI.
 
-1. A request is made for a task to be performed
-2. A program is run to complete that request
-3. The program sends back a response with the results
- 
- If the API request and response are sent over the internet, then the API is called a “Web Service API.”
+1. Open the *MainActivity.java* file.
+2. Declare the UI elements variables:
+
+```
+EditText editText;
+TextView textView;
+```
+The import statements are automatically added.
+
+2. Initialize these variables in the *OnCreate* method:
+
+```
+editText = findViewById(R.id.edit_text);
+textView = findViewById(R.id.text_view);
+```
+
+You can now use these elements as variables.
+
+3. Create the method framework for defining the button functionality:
+
+```
+public void displayResults(View view) {
+    }
+```
  
  <a name="Implement"></a>
 > ## Implementing Backend Functionality
